@@ -26,8 +26,19 @@ client.on('message', msg => {
         msg.reply('pong');
     }
     else if(v[0] === '!roll') {
-        var r = Math.floor((Math.random() * 6) + 1);
-        msg.reply("You rolled: " + r);
+        if(v.length > 1)
+        {
+            var x = v[1];
+            console.log("number of rolls:"  + x);
+            var xi = parseInt(x);
+
+            var r = Math.floor((Math.random() * xi) + 1);
+            msg.reply("Using a "+xi+"-sided die, you rolled: " + r);
+        }
+        else {
+            var r = Math.floor((Math.random() * 6) + 1);
+            msg.reply("Using a 6-sided die, you rolled: " + r);
+        }
     }
     
 });
