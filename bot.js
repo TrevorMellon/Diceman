@@ -26,7 +26,7 @@ client.on('message', msg => {
         msg.reply('pong');
     }
     else if(v[0] === '!roll') {
-        if(v.length > 1)
+        if(v.length == 2)
         {
             var x = v[1];
             console.log("number of rolls:"  + x);
@@ -34,6 +34,28 @@ client.on('message', msg => {
 
             var r = Math.floor((Math.random() * xi) + 1);
             msg.reply("Using a "+xi+"-sided die, you rolled: " + r);
+        }
+        else if(v.length == 3) {
+            var x = v[1];
+            var rolls = v[2];
+            var xi = parseInt(x)
+            var rollsi = parseInt(rolls);
+
+            var strmsg = "Using a " + xi + "-sided die. \n"
+            strmsg +=    "============================\n"
+
+            var count = 0;
+
+            for(var i = 0; i<rollsi; i++) {
+                var r = Math.floor((Math.random() * xi) + 1);
+                //msg.reply("Using a "+xi+"-sided die, you rolled: " + r);
+                strmsg += "Roll #" + (i+1) + ": " + r +"\n";
+                count += r;
+            }
+            strmsg += "============================\n"
+            strmsg += "\nTotal Amount: " + count + "\n";
+
+            msg.reply(strmsg);
         }
         else {
             var r = Math.floor((Math.random() * 6) + 1);
