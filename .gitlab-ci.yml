@@ -11,6 +11,8 @@ stages:
 test_async:
     stage: test
     script:
+     - echo "$DISCORD_STR" > ./.env
+     - echo "" >> ./.env
      - npm install
      - node ./bot.js
     tags:
