@@ -44,6 +44,11 @@ client.on('message', msg => {
             var strmsg = "Using a " + xi + "-sided die. \n"
             strmsg +=    "============================\n"
 
+            if(rollsi > 20) {
+                rollsi = 20;
+                strmsg += "WARNING: Too many rolls, maximum 20\n";
+            }
+
             var count = 0;
 
             for(var i = 0; i<rollsi; i++) {
@@ -94,6 +99,11 @@ client.on('message', msg => {
 
                 var strmsg = "Using a " + diei + "-sided die. \n"
                 strmsg +=    "============================\n"
+
+                if(rollsi > 20) {
+                    rollsi = 20;
+                    strmsg += "WARNING: Too many rolls, maximum 20\n";
+                }
 
                 var count = 0;
 
