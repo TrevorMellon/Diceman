@@ -36,5 +36,21 @@ client.on('message', msg => {
     else if(v[0] === '!diz') {
         util.diz(msg);
     }
+    else if(v[0] === '!help'
+        || v[0] === '/help' ) {
+        util.help(msg);
+    }
+    else if(v[0] === '!ajuda'
+        || v[0] === '/ajuda' ) {
+        util.ajuda(msg);
+    }
+    else if(v[0] === '!diceman') {
+        if(v[1] === 'help') {
+            util.diceman_help(msg);
+        }
+        else if(v[1] === 'ajuda') {
+            util.diceman_ajuda(msg);
+        }
+    }
     
 });

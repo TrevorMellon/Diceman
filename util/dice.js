@@ -3,6 +3,53 @@ module.exports = {
 
     // =================================================
     //
+    // Help Function
+    //
+    // =================================================
+
+    help: function(msg) {
+        var r = "";
+        r = "To get help on the diceman-bot call:\n";
+        r += "!diceman help";
+        msg.reply(r);
+    },
+
+    ajuda: function(msg) {
+        var r = "";
+        r = "Para obter ajuda sobre diceman-bot realizar:\n";
+        r += "!diceman ajuda";
+        msg.reply(r);
+    },
+
+    diceman_help: function(msg) {
+        var r = "";
+        r = "Diceman-Bot has two functions, \"roll\" and \"dice\"\n";
+        r += "\n";
+        r += "Examples:\n";
+        r += "\t!roll 12 = roll a 12-sided die\n";
+        r += "\t!roll 36 4 = roll a 36-sided die, 4 times\n";
+        r += "\n";
+        r += "\t!dice 6d4 = roll a 4-sided die, six times\n";
+        r += "\t!dice 3d12+10 = roll a 12-sided die, three times, then add 10";
+
+        msg.reply(r);
+    },
+
+    diceman_ajuda: function(msg) {
+        var r = "";
+        r += "Diceman-Bot tem duas funções, \"roll\" e \"diz\" \n";
+        r += "\n";
+        r += "Exemplos:\n"
+        r += "\t!roll 12 = rolar um dado de 12 lados\n";
+        r += "\t!roll 36 4 = rolar um dado de 36 lados, 4 vezes\n";
+        r += "\n";
+        r += "\t!diz 6d4 = rolar um dado de quatro lados, seis vezes\n";
+        r += "\t!diz 3d12+10 = role um dado de 12 lados, três vezes e adicione 10";
+        msg.reply(r);
+    },
+
+    // =================================================
+    //
     // Dice Funtion
     //
     // =================================================
