@@ -33,5 +33,8 @@ client.on('message', msg => {
     else if(v[0] === '!dice') {
         util.dice(msg);
     }
+    else if(v[0] === '!diz') {
+        util.diz(msg);
+    }
     
 });
