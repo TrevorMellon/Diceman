@@ -20,11 +20,11 @@ You will need to create a file ".env" and place your bot's private key in there.
 * /help = Responds to the generic command
 * !diceman help = Gives an overview of the available commands
 * !roll = Rolls a dice using format "!roll [Dice Side] [Amount of Rolls]"
-* !dice = Uses dice notation for example "!dice 3d6" or "!dice 4d12+10"
+* !dice = Uses dice notation, for example "!dice 3d6" or "!dice 4d12+10"
 
 ### Portugeuse
 
-* !ajuda = Responds to the generic command
-* /ajuda = Responds to the generic command
-* !diceman ajuda = Gives an overview of the available commands
-* !diz = Uses dice notation for example "!diz 3d6" or "!diz 4d12+10"
+* !ajuda = Responde ao comando genérico
+* /ajuda = Responde ao comando genérico
+* !diceman ajuda = Fornece uma visão geral dos comandos disponíveis
+* !diz = Usa notação de dados, por exemplo "!diz 3d6" ou "!diz 4d12+10"
