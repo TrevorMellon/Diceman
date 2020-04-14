@@ -22,12 +22,9 @@ client.on('message', msg => {
 
     if (v.length < 1) {
         return;
-    }
-   
-    if(v[0] === 'ping') {
-        msg.reply('pong');
-    }
-    else if(v[0] === '!roll') {
+    }   
+    
+    if(v[0] === '!roll') {
         util.roll(msg);
     }
     else if(v[0] === '!dice') {
