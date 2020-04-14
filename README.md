@@ -27,4 +27,4 @@ You will need to create a file ".env" and place your bot's private key in there.
 * !ajuda = Responds to the generic command
 * /ajuda = Responds to the generic command
 * !diceman ajuda = Gives an overview of the available commands
-* !diz = Uses dice notation for example "!dice 3d6" or "!dice 4d12+10"
+* !diz = Uses dice notation for example "!diz 3d6" or "!diz 4d12+10"
